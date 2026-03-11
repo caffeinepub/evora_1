@@ -31,7 +31,7 @@ export default function CartSheet({
         data-ocid="cart.sheet"
         className="w-full sm:max-w-md border-l flex flex-col"
         style={{
-          background: "oklch(14 0.08 290)",
+          background: "oklch(10 0.01 90)",
           borderColor: "oklch(var(--gold) / 0.2)",
         }}
       >
@@ -47,7 +47,7 @@ export default function CartSheet({
             size="icon"
             data-ocid="cart.close_button"
             onClick={() => onOpenChange(false)}
-            style={{ color: "oklch(65 0.04 285)" }}
+            style={{ color: "oklch(60 0.02 90)" }}
           >
             <X className="h-5 w-5" />
           </Button>
@@ -65,7 +65,7 @@ export default function CartSheet({
                 className="h-12 w-12"
                 style={{ color: "oklch(var(--gold) / 0.4)" }}
               />
-              <p style={{ color: "oklch(55 0.04 285)" }}>Your cart is empty</p>
+              <p style={{ color: "oklch(50 0.02 90)" }}>Your cart is empty</p>
             </div>
           ) : (
             <div className="space-y-4">
@@ -77,7 +77,7 @@ export default function CartSheet({
                   transition={{ delay: i * 0.08 }}
                   className="flex items-center gap-4 p-4 rounded-xl border"
                   style={{
-                    background: "oklch(18 0.08 290)",
+                    background: "oklch(14 0.01 90)",
                     borderColor: "oklch(var(--gold) / 0.15)",
                   }}
                 >
@@ -92,7 +92,7 @@ export default function CartSheet({
                     </p>
                     <p
                       className="text-xs mt-0.5"
-                      style={{ color: "oklch(60 0.04 285)" }}
+                      style={{ color: "oklch(55 0.02 90)" }}
                     >
                       Qty: {item.quantity}
                     </p>
@@ -117,7 +117,7 @@ export default function CartSheet({
             <div className="flex justify-between items-center">
               <span
                 className="font-medium"
-                style={{ color: "oklch(65 0.04 285)" }}
+                style={{ color: "oklch(60 0.02 90)" }}
               >
                 Subtotal
               </span>
@@ -132,7 +132,7 @@ export default function CartSheet({
               data-ocid="cart.primary_button"
               onClick={onCheckout}
               className="w-full py-6 font-semibold tracking-wide shimmer-gold border-0 hover:scale-[1.02] transition-transform active:scale-100"
-              style={{ color: "oklch(12 0.06 285)" }}
+              style={{ color: "oklch(8 0.01 90)" }}
             >
               Proceed to Checkout
             </Button>

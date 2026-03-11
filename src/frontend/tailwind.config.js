@@ -79,7 +79,7 @@ export default {
       boxShadow: {
         xs: "0 1px 2px 0 rgba(0,0,0,0.05)",
         gold: "0 0 30px oklch(72 0.14 75 / 0.4)",
-        purple: "0 0 40px oklch(52 0.28 295 / 0.35)",
+        "gold-lg": "0 0 60px oklch(72 0.14 75 / 0.3)",
       },
       keyframes: {
         "accordion-down": {
@@ -94,13 +94,13 @@ export default {
           "0%": { backgroundPosition: "200% center" },
           "100%": { backgroundPosition: "-200% center" },
         },
-        "float": {
+        float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-12px)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 30px oklch(52 0.28 295 / 0.3)" },
-          "50%": { boxShadow: "0 0 60px oklch(52 0.28 295 / 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 30px oklch(72 0.14 75 / 0.3)" },
+          "50%": { boxShadow: "0 0 60px oklch(72 0.14 75 / 0.6)" },
         },
       },
       animation: {

@@ -40,7 +40,7 @@ export default function ContactSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, oklch(10 0.04 285) 0%, oklch(14 0.09 290) 50%, oklch(10 0.04 285) 100%)",
+            "linear-gradient(180deg, oklch(6 0.01 90) 0%, oklch(10 0.01 90) 50%, oklch(6 0.01 90) 100%)",
         }}
       />
 
@@ -81,7 +81,7 @@ export default function ContactSection() {
               </h3>
               <p
                 className="leading-relaxed"
-                style={{ color: "oklch(65 0.04 285)" }}
+                style={{ color: "oklch(60 0.02 90)" }}
               >
                 Have questions about EVORA? Want to share your results? Our
                 beauty experts are here to help you achieve your skin goals.
@@ -111,7 +111,7 @@ export default function ContactSection() {
                   <div>
                     <div
                       className="text-xs tracking-wide uppercase"
-                      style={{ color: "oklch(55 0.04 285)" }}
+                      style={{ color: "oklch(50 0.02 90)" }}
                     >
                       {label}
                     </div>
@@ -136,7 +136,7 @@ export default function ContactSection() {
                 data-ocid="contact.success_state"
                 className="flex flex-col items-center justify-center gap-4 h-full min-h-64 rounded-2xl border p-8 text-center"
                 style={{
-                  background: "oklch(16 0.08 290)",
+                  background: "oklch(12 0.01 90)",
                   borderColor: "oklch(var(--gold) / 0.3)",
                 }}
               >
@@ -147,7 +147,7 @@ export default function ContactSection() {
                 <h4 className="font-display text-xl font-bold text-foreground">
                   Message Received!
                 </h4>
-                <p style={{ color: "oklch(65 0.04 285)" }}>
+                <p style={{ color: "oklch(60 0.02 90)" }}>
                   Thank you for reaching out. We'll be in touch within 24 hours.
                 </p>
                 <button
@@ -164,14 +164,14 @@ export default function ContactSection() {
                 onSubmit={handleSubmit}
                 className="space-y-5 rounded-2xl border p-8"
                 style={{
-                  background: "oklch(16 0.08 290)",
+                  background: "oklch(12 0.01 90)",
                   borderColor: "oklch(var(--gold) / 0.2)",
                 }}
               >
                 <div className="space-y-1.5">
                   <Label
                     className="text-xs tracking-wide uppercase"
-                    style={{ color: "oklch(60 0.04 285)" }}
+                    style={{ color: "oklch(55 0.02 90)" }}
                   >
                     Name
                   </Label>
@@ -182,7 +182,7 @@ export default function ContactSection() {
                     placeholder="Your full name"
                     required
                     style={{
-                      background: "oklch(20 0.08 290)",
+                      background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.2)",
                     }}
                   />
@@ -190,7 +190,7 @@ export default function ContactSection() {
                 <div className="space-y-1.5">
                   <Label
                     className="text-xs tracking-wide uppercase"
-                    style={{ color: "oklch(60 0.04 285)" }}
+                    style={{ color: "oklch(55 0.02 90)" }}
                   >
                     Email
                   </Label>
@@ -202,7 +202,7 @@ export default function ContactSection() {
                     placeholder="your@email.com"
                     required
                     style={{
-                      background: "oklch(20 0.08 290)",
+                      background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.2)",
                     }}
                   />
@@ -210,7 +210,7 @@ export default function ContactSection() {
                 <div className="space-y-1.5">
                   <Label
                     className="text-xs tracking-wide uppercase"
-                    style={{ color: "oklch(60 0.04 285)" }}
+                    style={{ color: "oklch(55 0.02 90)" }}
                   >
                     Message
                   </Label>
@@ -222,7 +222,7 @@ export default function ContactSection() {
                     rows={5}
                     required
                     style={{
-                      background: "oklch(20 0.08 290)",
+                      background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.2)",
                     }}
                   />
@@ -232,7 +232,7 @@ export default function ContactSection() {
                   disabled={loading}
                   data-ocid="contact.submit_button"
                   className="w-full py-6 font-semibold tracking-wide shimmer-gold border-0 hover:scale-[1.02] transition-transform active:scale-100"
-                  style={{ color: "oklch(12 0.06 285)" }}
+                  style={{ color: "oklch(8 0.01 90)" }}
                 >
                   {loading ? (
                     <>

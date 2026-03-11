@@ -64,12 +64,12 @@ export default function TestimonialsSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, oklch(10 0.04 285) 0%, oklch(13 0.09 292) 50%, oklch(10 0.04 285) 100%)",
+            "linear-gradient(180deg, oklch(6 0.01 90) 0%, oklch(10 0.01 90) 50%, oklch(6 0.01 90) 100%)",
         }}
       />
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl opacity-10"
-        style={{ background: "oklch(52 0.28 295)" }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl opacity-5"
+        style={{ background: "oklch(72 0.14 75)" }}
       />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -102,7 +102,7 @@ export default function TestimonialsSection() {
               transition={{ duration: 0.6, delay: i * 0.12 }}
               className="p-8 rounded-2xl border relative overflow-hidden group"
               style={{
-                background: "oklch(16 0.08 290)",
+                background: "oklch(12 0.01 90)",
                 borderColor: "oklch(var(--gold) / 0.2)",
               }}
             >
@@ -118,7 +118,7 @@ export default function TestimonialsSection() {
 
               <p
                 className="text-sm leading-relaxed mb-6 relative z-10"
-                style={{ color: "oklch(75 0.04 285)" }}
+                style={{ color: "oklch(72 0.02 90)" }}
               >
                 &ldquo;{t.quote}&rdquo;
               </p>
@@ -140,7 +140,7 @@ export default function TestimonialsSection() {
                   </div>
                   <div
                     className="text-xs"
-                    style={{ color: "oklch(55 0.04 285)" }}
+                    style={{ color: "oklch(50 0.02 90)" }}
                   >
                     {t.role}
                   </div>

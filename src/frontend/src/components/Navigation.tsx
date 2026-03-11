@@ -26,7 +26,7 @@ export default function Navigation({
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-border/40"
-      style={{ background: "oklch(12 0.06 285 / 0.92)" }}
+      style={{ background: "oklch(8 0.01 90 / 0.92)" }}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <a href="#home" data-ocid="nav.link">
@@ -44,12 +44,12 @@ export default function Navigation({
               href={link.href}
               data-ocid="nav.link"
               className="text-sm font-medium tracking-widest uppercase transition-colors duration-200"
-              style={{ color: "oklch(75 0.04 285)" }}
+              style={{ color: "oklch(70 0.02 90)" }}
               onMouseEnter={(e) => {
                 (e.target as HTMLElement).style.color = "oklch(var(--gold))";
               }}
               onMouseLeave={(e) => {
-                (e.target as HTMLElement).style.color = "oklch(75 0.04 285)";
+                (e.target as HTMLElement).style.color = "oklch(70 0.02 90)";
               }}
             >
               {link.label}
@@ -69,7 +69,7 @@ export default function Navigation({
           {cartCount > 0 && (
             <Badge
               className="absolute -top-1 -right-1 h-5 w-5 p-0 flex items-center justify-center text-xs shimmer-gold"
-              style={{ color: "oklch(12 0.06 285)" }}
+              style={{ color: "oklch(8 0.01 90)" }}
             >
               {cartCount}
             </Badge>

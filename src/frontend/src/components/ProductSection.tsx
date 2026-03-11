@@ -48,12 +48,12 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, oklch(10 0.04 285) 0%, oklch(14 0.08 290) 50%, oklch(10 0.04 285) 100%)",
+            "linear-gradient(180deg, oklch(6 0.01 90) 0%, oklch(10 0.01 90) 50%, oklch(6 0.01 90) 100%)",
         }}
       />
       <div
-        className="absolute top-0 right-0 w-1/2 h-full blur-3xl opacity-10"
-        style={{ background: "oklch(52 0.28 295)" }}
+        className="absolute top-0 right-0 w-1/2 h-full blur-3xl opacity-5"
+        style={{ background: "oklch(72 0.14 75)" }}
       />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -84,9 +84,9 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
             transition={{ duration: 0.7 }}
             className="rounded-2xl border p-8 relative"
             style={{
-              background: "oklch(16 0.08 290)",
+              background: "oklch(12 0.01 90)",
               borderColor: "oklch(var(--gold) / 0.2)",
-              boxShadow: "0 20px 60px oklch(10 0.06 285 / 0.6)",
+              boxShadow: "0 20px 60px oklch(4 0.01 90 / 0.6)",
             }}
           >
             <div className="flex items-start justify-between mb-4">
@@ -117,7 +117,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                 </div>
                 <div
                   className="text-xs line-through"
-                  style={{ color: "oklch(55 0.04 285)" }}
+                  style={{ color: "oklch(45 0.02 90)" }}
                 >
                   $79.99
                 </div>
@@ -126,7 +126,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
 
             <p
               className="text-sm leading-relaxed mb-6"
-              style={{ color: "oklch(72 0.04 285)" }}
+              style={{ color: "oklch(72 0.02 90)" }}
             >
               A luxurious blend of Vitamin C, Niacinamide, and Pearl Extract
               designed to visibly brighten, even skin tone, and restore
@@ -140,7 +140,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                     className="h-4 w-4 flex-shrink-0"
                     style={{ color: "oklch(var(--gold))" }}
                   />
-                  <span style={{ color: "oklch(80 0.04 285)" }}>{b}</span>
+                  <span style={{ color: "oklch(80 0.02 90)" }}>{b}</span>
                 </li>
               ))}
             </ul>
@@ -150,7 +150,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                 <Label
                   htmlFor="quantity-select"
                   className="text-xs tracking-wide uppercase"
-                  style={{ color: "oklch(60 0.04 285)" }}
+                  style={{ color: "oklch(55 0.02 90)" }}
                 >
                   Quantity
                 </Label>
@@ -160,7 +160,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                     data-ocid="product.select"
                     className="w-24 border"
                     style={{
-                      background: "oklch(20 0.08 290)",
+                      background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.3)",
                     }}
                   >
@@ -181,7 +181,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                 onClick={handleAddToCart}
                 data-ocid="product.primary_button"
                 className="flex-1 py-6 font-semibold tracking-wide shimmer-gold border-0 transition-transform hover:scale-[1.02] active:scale-100"
-                style={{ color: "oklch(12 0.06 285)" }}
+                style={{ color: "oklch(8 0.01 90)" }}
               >
                 Add to Cart
               </Button>
@@ -211,7 +211,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="flex items-center gap-4 p-4 rounded-xl border"
                   style={{
-                    background: "oklch(16 0.07 290)",
+                    background: "oklch(12 0.01 90)",
                     borderColor: "oklch(var(--gold) / 0.15)",
                   }}
                 >
@@ -230,7 +230,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                     </div>
                     <div
                       className="text-xs mt-0.5"
-                      style={{ color: "oklch(60 0.04 285)" }}
+                      style={{ color: "oklch(55 0.02 90)" }}
                     >
                       {ing.desc}
                     </div>

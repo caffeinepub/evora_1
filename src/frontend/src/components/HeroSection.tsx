@@ -19,19 +19,19 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
       className="relative min-h-screen flex items-center overflow-hidden noise-texture"
       style={{
         background: `
-          radial-gradient(ellipse 80% 60% at 70% 50%, oklch(22 0.18 292 / 0.6) 0%, transparent 60%),
-          radial-gradient(ellipse 50% 80% at 20% 80%, oklch(72 0.14 75 / 0.08) 0%, transparent 50%),
-          linear-gradient(160deg, oklch(10 0.08 290) 0%, oklch(14 0.10 292) 40%, oklch(10 0.04 285) 100%)
+          radial-gradient(ellipse 80% 60% at 70% 50%, oklch(72 0.14 75 / 0.12) 0%, transparent 60%),
+          radial-gradient(ellipse 50% 80% at 20% 80%, oklch(72 0.14 75 / 0.06) 0%, transparent 50%),
+          linear-gradient(160deg, oklch(6 0.01 90) 0%, oklch(10 0.01 90) 40%, oklch(6 0.01 90) 100%)
         `,
       }}
     >
       {/* Decorative orbs */}
       <div
         className="absolute top-20 right-[10%] w-96 h-96 rounded-full blur-3xl opacity-20 animate-pulse-glow"
-        style={{ background: "oklch(52 0.28 295)" }}
+        style={{ background: "oklch(72 0.14 75)" }}
       />
       <div
-        className="absolute bottom-20 left-[5%] w-64 h-64 rounded-full blur-3xl opacity-15"
+        className="absolute bottom-20 left-[5%] w-64 h-64 rounded-full blur-3xl opacity-10"
         style={{ background: "oklch(72 0.14 75)" }}
       />
 
@@ -81,7 +81,7 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.7 }}
             className="text-lg leading-relaxed max-w-md"
-            style={{ color: "oklch(72 0.04 285)" }}
+            style={{ color: "oklch(72 0.02 90)" }}
           >
             EVORA Advanced Brightening Cream — clinically tested, luxury
             formulated. Transform your skin in just 4 weeks.
@@ -98,11 +98,11 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
               onClick={onShopNow}
               data-ocid="hero.primary_button"
               className="px-8 py-6 text-base font-semibold tracking-wide shimmer-gold glow-gold border-0 transition-transform hover:scale-105 active:scale-100"
-              style={{ color: "oklch(12 0.06 285)" }}
+              style={{ color: "oklch(8 0.01 90)" }}
             >
               Shop Now — $49.99
             </Button>
-            <span className="text-sm" style={{ color: "oklch(60 0.04 285)" }}>
+            <span className="text-sm" style={{ color: "oklch(55 0.02 90)" }}>
               Free shipping on orders over $75
             </span>
           </motion.div>
@@ -120,7 +120,7 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
                 </div>
                 <div
                   className="text-xs tracking-wide"
-                  style={{ color: "oklch(60 0.04 285)" }}
+                  style={{ color: "oklch(55 0.02 90)" }}
                 >
                   {label}
                 </div>
@@ -138,7 +138,7 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
         >
           <div
             className="absolute w-80 h-80 rounded-full blur-3xl"
-            style={{ background: "oklch(52 0.28 295 / 0.25)" }}
+            style={{ background: "oklch(72 0.14 75 / 0.15)" }}
           />
           <img
             src="/assets/generated/evora-product-hero.dim_800x800.png"

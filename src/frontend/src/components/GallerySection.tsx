@@ -28,7 +28,7 @@ export default function GallerySection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, oklch(10 0.04 285) 0%, oklch(12 0.07 290) 50%, oklch(10 0.04 285) 100%)",
+            "linear-gradient(180deg, oklch(6 0.01 90) 0%, oklch(10 0.01 90) 50%, oklch(6 0.01 90) 100%)",
         }}
       />
 
@@ -51,7 +51,7 @@ export default function GallerySection() {
           </h2>
           <p
             className="mt-4 text-base max-w-xl mx-auto"
-            style={{ color: "oklch(65 0.04 285)" }}
+            style={{ color: "oklch(60 0.02 90)" }}
           >
             Real customers, real transformations. No filters, no retouching.
           </p>
@@ -68,7 +68,7 @@ export default function GallerySection() {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="rounded-2xl overflow-hidden border group"
               style={{
-                background: "oklch(16 0.08 290)",
+                background: "oklch(12 0.01 90)",
                 borderColor: "oklch(var(--gold) / 0.2)",
               }}
             >
@@ -82,7 +82,7 @@ export default function GallerySection() {
                   className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-semibold tracking-wide"
                   style={{
                     background: "oklch(var(--gold))",
-                    color: "oklch(12 0.06 285)",
+                    color: "oklch(8 0.01 90)",
                   }}
                 >
                   {item.week}
@@ -97,7 +97,7 @@ export default function GallerySection() {
                 </h4>
                 <p
                   className="text-sm leading-relaxed"
-                  style={{ color: "oklch(65 0.04 285)" }}
+                  style={{ color: "oklch(60 0.02 90)" }}
                 >
                   {item.desc}
                 </p>

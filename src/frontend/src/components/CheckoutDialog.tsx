@@ -67,7 +67,7 @@ export default function CheckoutDialog({
         data-ocid="checkout.dialog"
         className="sm:max-w-lg border"
         style={{
-          background: "oklch(14 0.08 290)",
+          background: "oklch(10 0.01 90)",
           borderColor: "oklch(var(--gold) / 0.25)",
         }}
       >
@@ -94,14 +94,14 @@ export default function CheckoutDialog({
             <h3 className="font-display text-2xl font-bold text-foreground">
               Order Confirmed!
             </h3>
-            <p style={{ color: "oklch(65 0.04 285)" }}>
+            <p style={{ color: "oklch(60 0.02 90)" }}>
               Thank you for your purchase. You will receive a confirmation email
               shortly.
             </p>
             <Button
               onClick={handleClose}
               className="mt-2 shimmer-gold border-0 px-8"
-              style={{ color: "oklch(12 0.06 285)" }}
+              style={{ color: "oklch(8 0.01 90)" }}
             >
               Close
             </Button>
@@ -111,17 +111,17 @@ export default function CheckoutDialog({
             {/* Order summary */}
             <div
               className="rounded-xl p-4 space-y-2"
-              style={{ background: "oklch(18 0.08 290)" }}
+              style={{ background: "oklch(14 0.01 90)" }}
             >
               <p
                 className="text-xs tracking-wide uppercase"
-                style={{ color: "oklch(55 0.04 285)" }}
+                style={{ color: "oklch(50 0.02 90)" }}
               >
                 Order Summary
               </p>
               {items.map((item) => (
                 <div key={item.name} className="flex justify-between text-sm">
-                  <span style={{ color: "oklch(72 0.04 285)" }}>
+                  <span style={{ color: "oklch(72 0.02 90)" }}>
                     {item.name} × {item.quantity}
                   </span>
                   <span style={{ color: "oklch(var(--gold))" }}>
@@ -131,7 +131,7 @@ export default function CheckoutDialog({
               ))}
               <Separator style={{ background: "oklch(var(--gold) / 0.1)" }} />
               <div className="flex justify-between font-semibold">
-                <span style={{ color: "oklch(72 0.04 285)" }}>Total</span>
+                <span style={{ color: "oklch(72 0.02 90)" }}>Total</span>
                 <span style={{ color: "oklch(var(--gold))" }}>
                   ${subtotal.toFixed(2)}
                 </span>
@@ -142,7 +142,7 @@ export default function CheckoutDialog({
               <div className="col-span-2 space-y-1.5">
                 <Label
                   className="text-xs tracking-wide uppercase"
-                  style={{ color: "oklch(60 0.04 285)" }}
+                  style={{ color: "oklch(55 0.02 90)" }}
                 >
                   Full Name
                 </Label>
@@ -154,7 +154,7 @@ export default function CheckoutDialog({
                   required
                   autoComplete="name"
                   style={{
-                    background: "oklch(20 0.08 290)",
+                    background: "oklch(18 0.01 90)",
                     borderColor: "oklch(var(--gold) / 0.2)",
                   }}
                 />
@@ -162,7 +162,7 @@ export default function CheckoutDialog({
               <div className="space-y-1.5">
                 <Label
                   className="text-xs tracking-wide uppercase"
-                  style={{ color: "oklch(60 0.04 285)" }}
+                  style={{ color: "oklch(55 0.02 90)" }}
                 >
                   Email
                 </Label>
@@ -175,7 +175,7 @@ export default function CheckoutDialog({
                   required
                   autoComplete="email"
                   style={{
-                    background: "oklch(20 0.08 290)",
+                    background: "oklch(18 0.01 90)",
                     borderColor: "oklch(var(--gold) / 0.2)",
                   }}
                 />
@@ -183,7 +183,7 @@ export default function CheckoutDialog({
               <div className="space-y-1.5">
                 <Label
                   className="text-xs tracking-wide uppercase"
-                  style={{ color: "oklch(60 0.04 285)" }}
+                  style={{ color: "oklch(55 0.02 90)" }}
                 >
                   Phone
                 </Label>
@@ -196,7 +196,7 @@ export default function CheckoutDialog({
                   required
                   autoComplete="tel"
                   style={{
-                    background: "oklch(20 0.08 290)",
+                    background: "oklch(18 0.01 90)",
                     borderColor: "oklch(var(--gold) / 0.2)",
                   }}
                 />
@@ -204,7 +204,7 @@ export default function CheckoutDialog({
               <div className="col-span-2 space-y-1.5">
                 <Label
                   className="text-xs tracking-wide uppercase"
-                  style={{ color: "oklch(60 0.04 285)" }}
+                  style={{ color: "oklch(55 0.02 90)" }}
                 >
                   Shipping Address
                 </Label>
@@ -216,7 +216,7 @@ export default function CheckoutDialog({
                   required
                   autoComplete="street-address"
                   style={{
-                    background: "oklch(20 0.08 290)",
+                    background: "oklch(18 0.01 90)",
                     borderColor: "oklch(var(--gold) / 0.2)",
                   }}
                 />
@@ -228,7 +228,7 @@ export default function CheckoutDialog({
               disabled={loading}
               data-ocid="checkout.submit_button"
               className="w-full py-6 font-semibold tracking-wide shimmer-gold border-0 hover:scale-[1.02] transition-transform active:scale-100"
-              style={{ color: "oklch(12 0.06 285)" }}
+              style={{ color: "oklch(8 0.01 90)" }}
             >
               {loading ? (
                 <>
