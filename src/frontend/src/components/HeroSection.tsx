@@ -50,7 +50,7 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
             className="inline-flex items-center gap-2 w-fit px-4 py-1.5 rounded-full border text-xs tracking-widest uppercase"
             style={{
               borderColor: "oklch(var(--gold) / 0.4)",
-              color: "oklch(var(--gold))",
+              color: "oklch(1 0 0)",
               background: "oklch(var(--gold) / 0.08)",
             }}
           >
@@ -63,13 +63,14 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7 }}
             className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+            style={{ color: "oklch(1 0 0)" }}
           >
             Reveal Your{" "}
             <span
               className="block shimmer-gold bg-clip-text"
               style={{
                 WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                WebkitTextFillColor: "oklch(1 0 0)",
               }}
             >
               Radiant Glow
@@ -81,7 +82,7 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.7 }}
             className="text-lg leading-relaxed max-w-md"
-            style={{ color: "oklch(72 0.02 90)" }}
+            style={{ color: "oklch(1 0 0)" }}
           >
             EVORA Advanced Brightening Cream — clinically tested, luxury
             formulated. Transform your skin in just 4 weeks.
@@ -98,11 +99,11 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
               onClick={onShopNow}
               data-ocid="hero.primary_button"
               className="px-8 py-6 text-base font-semibold tracking-wide shimmer-gold glow-gold border-0 transition-transform hover:scale-105 active:scale-100"
-              style={{ color: "oklch(8 0.01 90)" }}
+              style={{ color: "oklch(1 0 0)" }}
             >
               Shop Now — $49.99
             </Button>
-            <span className="text-sm" style={{ color: "oklch(55 0.02 90)" }}>
+            <span className="text-sm" style={{ color: "oklch(1 0 0)" }}>
               Free shipping on orders over $75
             </span>
           </motion.div>
@@ -115,12 +116,15 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
           >
             {stats.map(({ stat, label }) => (
               <div key={label}>
-                <div className="font-display text-xl font-bold text-gold">
+                <div
+                  className="font-display text-xl font-bold"
+                  style={{ color: "oklch(1 0 0)" }}
+                >
                   {stat}
                 </div>
                 <div
                   className="text-xs tracking-wide"
-                  style={{ color: "oklch(55 0.02 90)" }}
+                  style={{ color: "oklch(1 0 0)" }}
                 >
                   {label}
                 </div>
@@ -154,14 +158,14 @@ export default function HeroSection({ onShopNow }: HeroSectionProps) {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        style={{ color: "oklch(var(--gold) / 0.5)" }}
+        style={{ color: "oklch(1 0 0)" }}
       >
         <span className="text-xs tracking-widest uppercase">Discover</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
           className="w-0.5 h-8 rounded-full"
-          style={{ background: "oklch(var(--gold) / 0.4)" }}
+          style={{ background: "oklch(0 0 0 / 0.4)" }}
         />
       </motion.div>
     </section>

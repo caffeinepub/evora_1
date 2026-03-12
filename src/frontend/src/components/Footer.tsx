@@ -31,7 +31,7 @@ export default function Footer() {
             />
             <p
               className="text-sm leading-relaxed max-w-xs"
-              style={{ color: "oklch(45 0.02 90)" }}
+              style={{ color: "oklch(1 0 0)" }}
             >
               Luxury skincare powered by science. EVORA Lumière Brightening
               Cream — your daily ritual for radiant, luminous skin.
@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-semibold text-sm tracking-widest uppercase mb-4"
-              style={{ color: "oklch(var(--gold))" }}
+              style={{ color: "oklch(1 0 0)" }}
             >
               Company
             </h4>
@@ -53,14 +53,13 @@ export default function Footer() {
                     <button
                       type="button"
                       className="text-sm transition-colors duration-200 text-left"
-                      style={{ color: "oklch(45 0.02 90)" }}
+                      style={{ color: "oklch(1 0 0)" }}
                       onMouseEnter={(e) => {
                         (e.target as HTMLElement).style.color =
                           "oklch(var(--gold))";
                       }}
                       onMouseLeave={(e) => {
-                        (e.target as HTMLElement).style.color =
-                          "oklch(45 0.02 90)";
+                        (e.target as HTMLElement).style.color = "oklch(1 0 0)";
                       }}
                     >
                       {link}
@@ -74,7 +73,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-semibold text-sm tracking-widest uppercase mb-4"
-              style={{ color: "oklch(var(--gold))" }}
+              style={{ color: "oklch(1 0 0)" }}
             >
               Support
             </h4>
@@ -85,14 +84,13 @@ export default function Footer() {
                     <button
                       type="button"
                       className="text-sm transition-colors duration-200 text-left"
-                      style={{ color: "oklch(45 0.02 90)" }}
+                      style={{ color: "oklch(1 0 0)" }}
                       onMouseEnter={(e) => {
                         (e.target as HTMLElement).style.color =
                           "oklch(var(--gold))";
                       }}
                       onMouseLeave={(e) => {
-                        (e.target as HTMLElement).style.color =
-                          "oklch(45 0.02 90)";
+                        (e.target as HTMLElement).style.color = "oklch(1 0 0)";
                       }}
                     >
                       {link}
@@ -107,7 +105,7 @@ export default function Footer() {
         <Separator style={{ background: "oklch(var(--gold) / 0.1)" }} />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
-          <p className="text-xs" style={{ color: "oklch(35 0.02 90)" }}>
+          <p className="text-xs" style={{ color: "oklch(1 0 0)" }}>
             © {year} EVORA. All rights reserved. Luxury skincare, redefined.
           </p>
           <a
@@ -115,7 +113,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs transition-opacity hover:opacity-80"
-            style={{ color: "oklch(35 0.02 90)" }}
+            style={{ color: "oklch(1 0 0)" }}
           >
             Built with{" "}
             <Sparkles

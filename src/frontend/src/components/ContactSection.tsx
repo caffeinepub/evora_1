@@ -54,11 +54,14 @@ export default function ContactSection() {
         >
           <p
             className="text-xs tracking-widest uppercase mb-3"
-            style={{ color: "oklch(var(--gold))" }}
+            style={{ color: "oklch(1 0 0)" }}
           >
             Reach Out
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
+          <h2
+            className="font-display text-4xl md:text-5xl font-bold"
+            style={{ color: "oklch(1 0 0)" }}
+          >
             Get In Touch
           </h2>
         </motion.div>
@@ -75,14 +78,11 @@ export default function ContactSection() {
             <div>
               <h3
                 className="font-display text-2xl font-bold mb-4"
-                style={{ color: "oklch(var(--gold))" }}
+                style={{ color: "oklch(1 0 0)" }}
               >
                 We'd Love to Hear From You
               </h3>
-              <p
-                className="leading-relaxed"
-                style={{ color: "oklch(60 0.02 90)" }}
-              >
+              <p className="leading-relaxed" style={{ color: "oklch(1 0 0)" }}>
                 Have questions about EVORA? Want to share your results? Our
                 beauty experts are here to help you achieve your skin goals.
               </p>
@@ -111,11 +111,14 @@ export default function ContactSection() {
                   <div>
                     <div
                       className="text-xs tracking-wide uppercase"
-                      style={{ color: "oklch(50 0.02 90)" }}
+                      style={{ color: "oklch(1 0 0)" }}
                     >
                       {label}
                     </div>
-                    <div className="font-medium text-sm text-foreground">
+                    <div
+                      className="font-medium text-sm"
+                      style={{ color: "oklch(1 0 0)" }}
+                    >
                       {value}
                     </div>
                   </div>
@@ -144,16 +147,19 @@ export default function ContactSection() {
                   className="h-12 w-12"
                   style={{ color: "oklch(var(--gold))" }}
                 />
-                <h4 className="font-display text-xl font-bold text-foreground">
+                <h4
+                  className="font-display text-xl font-bold"
+                  style={{ color: "oklch(1 0 0)" }}
+                >
                   Message Received!
                 </h4>
-                <p style={{ color: "oklch(60 0.02 90)" }}>
+                <p style={{ color: "oklch(1 0 0)" }}>
                   Thank you for reaching out. We'll be in touch within 24 hours.
                 </p>
                 <button
                   type="button"
                   className="text-sm underline"
-                  style={{ color: "oklch(var(--gold))" }}
+                  style={{ color: "oklch(1 0 0)" }}
                   onClick={() => setSuccess(false)}
                 >
                   Send another message
@@ -171,7 +177,7 @@ export default function ContactSection() {
                 <div className="space-y-1.5">
                   <Label
                     className="text-xs tracking-wide uppercase"
-                    style={{ color: "oklch(55 0.02 90)" }}
+                    style={{ color: "oklch(1 0 0)" }}
                   >
                     Name
                   </Label>
@@ -184,13 +190,14 @@ export default function ContactSection() {
                     style={{
                       background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.2)",
+                      color: "oklch(1 0 0)",
                     }}
                   />
                 </div>
                 <div className="space-y-1.5">
                   <Label
                     className="text-xs tracking-wide uppercase"
-                    style={{ color: "oklch(55 0.02 90)" }}
+                    style={{ color: "oklch(1 0 0)" }}
                   >
                     Email
                   </Label>
@@ -204,13 +211,14 @@ export default function ContactSection() {
                     style={{
                       background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.2)",
+                      color: "oklch(1 0 0)",
                     }}
                   />
                 </div>
                 <div className="space-y-1.5">
                   <Label
                     className="text-xs tracking-wide uppercase"
-                    style={{ color: "oklch(55 0.02 90)" }}
+                    style={{ color: "oklch(1 0 0)" }}
                   >
                     Message
                   </Label>
@@ -224,6 +232,7 @@ export default function ContactSection() {
                     style={{
                       background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.2)",
+                      color: "oklch(1 0 0)",
                     }}
                   />
                 </div>
@@ -232,7 +241,7 @@ export default function ContactSection() {
                   disabled={loading}
                   data-ocid="contact.submit_button"
                   className="w-full py-6 font-semibold tracking-wide shimmer-gold border-0 hover:scale-[1.02] transition-transform active:scale-100"
-                  style={{ color: "oklch(8 0.01 90)" }}
+                  style={{ color: "oklch(1 0 0)" }}
                 >
                   {loading ? (
                     <>

@@ -42,16 +42,19 @@ export default function GallerySection() {
         >
           <p
             className="text-xs tracking-widest uppercase mb-3"
-            style={{ color: "oklch(var(--gold))" }}
+            style={{ color: "oklch(1 0 0)" }}
           >
             Before & After
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
+          <h2
+            className="font-display text-4xl md:text-5xl font-bold"
+            style={{ color: "oklch(1 0 0)" }}
+          >
             Real Results
           </h2>
           <p
             className="mt-4 text-base max-w-xl mx-auto"
-            style={{ color: "oklch(60 0.02 90)" }}
+            style={{ color: "oklch(1 0 0)" }}
           >
             Real customers, real transformations. No filters, no retouching.
           </p>
@@ -82,7 +85,7 @@ export default function GallerySection() {
                   className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-semibold tracking-wide"
                   style={{
                     background: "oklch(var(--gold))",
-                    color: "oklch(8 0.01 90)",
+                    color: "oklch(1 0 0)",
                   }}
                 >
                   {item.week}
@@ -91,13 +94,13 @@ export default function GallerySection() {
               <div className="p-6">
                 <h4
                   className="font-display text-lg font-bold mb-2"
-                  style={{ color: "oklch(var(--gold))" }}
+                  style={{ color: "oklch(1 0 0)" }}
                 >
                   {item.label}
                 </h4>
                 <p
                   className="text-sm leading-relaxed"
-                  style={{ color: "oklch(60 0.02 90)" }}
+                  style={{ color: "oklch(1 0 0)" }}
                 >
                   {item.desc}
                 </p>

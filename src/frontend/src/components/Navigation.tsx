@@ -44,12 +44,12 @@ export default function Navigation({
               href={link.href}
               data-ocid="nav.link"
               className="text-sm font-medium tracking-widest uppercase transition-colors duration-200"
-              style={{ color: "oklch(70 0.02 90)" }}
+              style={{ color: "oklch(1 0 0)" }}
               onMouseEnter={(e) => {
                 (e.target as HTMLElement).style.color = "oklch(var(--gold))";
               }}
               onMouseLeave={(e) => {
-                (e.target as HTMLElement).style.color = "oklch(70 0.02 90)";
+                (e.target as HTMLElement).style.color = "oklch(1 0 0)";
               }}
             >
               {link.label}
@@ -63,13 +63,13 @@ export default function Navigation({
           onClick={onCartClick}
           data-ocid="nav.cart_button"
           className="relative"
-          style={{ color: "oklch(var(--gold))" }}
+          style={{ color: "oklch(1 0 0)" }}
         >
           <ShoppingCart className="h-5 w-5" />
           {cartCount > 0 && (
             <Badge
               className="absolute -top-1 -right-1 h-5 w-5 p-0 flex items-center justify-center text-xs shimmer-gold"
-              style={{ color: "oklch(8 0.01 90)" }}
+              style={{ color: "oklch(1 0 0)" }}
             >
               {cartCount}
             </Badge>

@@ -34,26 +34,13 @@ const testimonials = [
 
 const StarRating = () => (
   <div className="flex items-center gap-1 mb-4" aria-label="5 stars">
-    <Star
-      className="h-4 w-4 fill-current"
-      style={{ color: "oklch(var(--gold))" }}
-    />
-    <Star
-      className="h-4 w-4 fill-current"
-      style={{ color: "oklch(var(--gold))" }}
-    />
-    <Star
-      className="h-4 w-4 fill-current"
-      style={{ color: "oklch(var(--gold))" }}
-    />
-    <Star
-      className="h-4 w-4 fill-current"
-      style={{ color: "oklch(var(--gold))" }}
-    />
-    <Star
-      className="h-4 w-4 fill-current"
-      style={{ color: "oklch(var(--gold))" }}
-    />
+    {[1, 2, 3, 4, 5].map((n) => (
+      <Star
+        key={n}
+        className="h-4 w-4 fill-current"
+        style={{ color: "oklch(var(--gold))" }}
+      />
+    ))}
   </div>
 );
 
@@ -82,11 +69,14 @@ export default function TestimonialsSection() {
         >
           <p
             className="text-xs tracking-widest uppercase mb-3"
-            style={{ color: "oklch(var(--gold))" }}
+            style={{ color: "oklch(1 0 0)" }}
           >
             Customer Stories
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
+          <h2
+            className="font-display text-4xl md:text-5xl font-bold"
+            style={{ color: "oklch(1 0 0)" }}
+          >
             What Our Customers Say
           </h2>
         </motion.div>
@@ -118,7 +108,7 @@ export default function TestimonialsSection() {
 
               <p
                 className="text-sm leading-relaxed mb-6 relative z-10"
-                style={{ color: "oklch(72 0.02 90)" }}
+                style={{ color: "oklch(1 0 0)" }}
               >
                 &ldquo;{t.quote}&rdquo;
               </p>
@@ -128,20 +118,20 @@ export default function TestimonialsSection() {
                   className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0"
                   style={{
                     background: "oklch(var(--gold) / 0.15)",
-                    color: "oklch(var(--gold))",
+                    color: "oklch(1 0 0)",
                     border: "1px solid oklch(var(--gold) / 0.3)",
                   }}
                 >
                   {t.initials}
                 </div>
                 <div>
-                  <div className="font-semibold text-sm text-foreground">
+                  <div
+                    className="font-semibold text-sm"
+                    style={{ color: "oklch(1 0 0)" }}
+                  >
                     {t.name}
                   </div>
-                  <div
-                    className="text-xs"
-                    style={{ color: "oklch(50 0.02 90)" }}
-                  >
+                  <div className="text-xs" style={{ color: "oklch(1 0 0)" }}>
                     {t.role}
                   </div>
                 </div>

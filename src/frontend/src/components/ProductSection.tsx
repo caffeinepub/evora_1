@@ -66,11 +66,14 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
         >
           <p
             className="text-xs tracking-widest uppercase mb-3"
-            style={{ color: "oklch(var(--gold))" }}
+            style={{ color: "oklch(1 0 0)" }}
           >
             Luxury Formula
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
+          <h2
+            className="font-display text-4xl md:text-5xl font-bold"
+            style={{ color: "oklch(1 0 0)" }}
+          >
             The Science of Radiance
           </h2>
         </motion.div>
@@ -95,29 +98,32 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                   className="mb-3 text-xs tracking-wide"
                   style={{
                     background: "oklch(var(--gold) / 0.15)",
-                    color: "oklch(var(--gold))",
+                    color: "oklch(1 0 0)",
                     borderColor: "oklch(var(--gold) / 0.3)",
                   }}
                 >
                   Best Seller
                 </Badge>
-                <h3 className="font-display text-2xl font-bold text-foreground">
+                <h3
+                  className="font-display text-2xl font-bold"
+                  style={{ color: "oklch(1 0 0)" }}
+                >
                   EVORA Lumière
                 </h3>
-                <p className="text-muted-foreground text-sm mt-1">
+                <p className="text-sm mt-1" style={{ color: "oklch(1 0 0)" }}>
                   Brightening Cream — 50ml
                 </p>
               </div>
               <div className="text-right">
                 <div
                   className="font-display text-3xl font-bold"
-                  style={{ color: "oklch(var(--gold))" }}
+                  style={{ color: "oklch(1 0 0)" }}
                 >
                   $49.99
                 </div>
                 <div
                   className="text-xs line-through"
-                  style={{ color: "oklch(45 0.02 90)" }}
+                  style={{ color: "oklch(1 0 0)" }}
                 >
                   $79.99
                 </div>
@@ -126,7 +132,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
 
             <p
               className="text-sm leading-relaxed mb-6"
-              style={{ color: "oklch(72 0.02 90)" }}
+              style={{ color: "oklch(1 0 0)" }}
             >
               A luxurious blend of Vitamin C, Niacinamide, and Pearl Extract
               designed to visibly brighten, even skin tone, and restore
@@ -140,7 +146,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                     className="h-4 w-4 flex-shrink-0"
                     style={{ color: "oklch(var(--gold))" }}
                   />
-                  <span style={{ color: "oklch(80 0.02 90)" }}>{b}</span>
+                  <span style={{ color: "oklch(1 0 0)" }}>{b}</span>
                 </li>
               ))}
             </ul>
@@ -150,7 +156,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                 <Label
                   htmlFor="quantity-select"
                   className="text-xs tracking-wide uppercase"
-                  style={{ color: "oklch(55 0.02 90)" }}
+                  style={{ color: "oklch(1 0 0)" }}
                 >
                   Quantity
                 </Label>
@@ -162,6 +168,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                     style={{
                       background: "oklch(18 0.01 90)",
                       borderColor: "oklch(var(--gold) / 0.3)",
+                      color: "oklch(1 0 0)",
                     }}
                   >
                     <SelectValue />
@@ -181,7 +188,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                 onClick={handleAddToCart}
                 data-ocid="product.primary_button"
                 className="flex-1 py-6 font-semibold tracking-wide shimmer-gold border-0 transition-transform hover:scale-[1.02] active:scale-100"
-                style={{ color: "oklch(8 0.01 90)" }}
+                style={{ color: "oklch(1 0 0)" }}
               >
                 Add to Cart
               </Button>
@@ -197,7 +204,7 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
           >
             <h3
               className="font-display text-2xl font-bold mb-8"
-              style={{ color: "oklch(var(--gold))" }}
+              style={{ color: "oklch(1 0 0)" }}
             >
               Key Ingredients
             </h3>
@@ -225,12 +232,15 @@ export default function ProductSection({ onAddToCart }: ProductSectionProps) {
                     />
                   </div>
                   <div>
-                    <div className="font-semibold text-sm text-foreground">
+                    <div
+                      className="font-semibold text-sm"
+                      style={{ color: "oklch(1 0 0)" }}
+                    >
                       {ing.name}
                     </div>
                     <div
                       className="text-xs mt-0.5"
-                      style={{ color: "oklch(55 0.02 90)" }}
+                      style={{ color: "oklch(1 0 0)" }}
                     >
                       {ing.desc}
                     </div>
